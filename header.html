@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!-- CDN -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+  <!-- FONTS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,400&display=swap"
+    rel="stylesheet">
+  <!-- CUSTOM CSS -->
+  <link rel="stylesheet" href="./assets/style/main.css" />
+  <link rel="stylesheet" href="./assets/style/header.css" />
+
+</head>
+
+<body>
+  <header>
+    <section id="header-top" class="dark-blue-color font-size-16">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <nav class="navbar navbar-expand-xl p-0">
+              <a href="#" class="navbar-brand">
+                <div class="logo">
+                  <img src="./assets/images/logo-colearn.svg" height="41px" class="logo-header" alt="">
+                </div>
+              </a>
+              <button class="btn navbar-toggler p-1 d-sm-none d-md-block">
+                <img src="./assets/images/icon/navbar.svg" alt=""class="navbar-toggler-icon-1 text-white">
+              </button>
+              <button class="btn navbar-toggler" data-toggle='collapse' data-target='#main-nav'>
+                <span class="navbar-toggler-icon-2 text-white"><img src="./assets/images/icon/navbar.svg" alt=""></span>
+              </button>
+              <div class="collapse navbar-collapse" id="main-nav">
+                <!-- Space phía bên trái nó phải nhỏ hơn phía bên phải, mình đang bị ngược, sửa lại nha -->
+                <ul class="main-menu navbar-nav no-gutters d-flex mr-auto">
+                  <li class="nav-item fw-700">
+                    <a class="nav-link text-white p-0" href="#">Trang chủ</a>
+                  </li>
+                  <li class="nav-item fw-700">
+                    <a class="nav-link text-white p-0" href="#">Hỏi bài</a>
+                  </li>
+                  <li class="nav-item fw-700">
+                    <a class="nav-link text-white p-0" href="#">Lớp học</a>
+                  </li>
+                  <li class="nav-item fw-700 item-active">
+                    <a class="nav-link text-white p-0" href="#">Thư viện
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="notify">
+                <img src="./assets/images/icon/notify.svg" height="24px" class="notify-icon" title="Thông báo" alt="">
+              </div>
+              <div class="dropdown">
+                <button class="btn choose-class class-link d-block text-white dropdown-toggle" type="button" id="dropdownChooseClass" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Lớp 12
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownChooseClass">
+                  <a class="dropdown-item" href="#">Lớp 11</a>
+                  <a class="dropdown-item" href="#">Lớp 10</a>
+                </div>
+              </div>
+              <div>
+                <img src="./assets/images/avt.png" height="36px" class="avatar" title="Avatar" alt="">
+              </div>
+            </nav>
+            <!-- End-nav -->
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="header-bottom" class="bg-white">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="d-flex align-items-start">
+              <!-- Bị sai css về kích thước nè -->
+              <ul class="d-flex main-top-navigator mb-0 font-size-20">
+                <li class="each-tab-navigator active"><a class="link-target text-dark" href="">Chuyên đề</a></li>
+                <li class="each-tab-navigator"><a class="link-target text-dark" href="">Tài liệu</a></li>
+                <li class="each-tab-navigator"><a class="link-target text-dark" href="">Trắc nghiệm</a></li>
+              </ul> 
+              <div class="ml-auto">
+                <div class="my-library">
+                  <a class="library-link text-white fw-500 mx-1 font-size-16" href="#">
+                    <img src="./assets/images/icon/library.svg" alt="" class="mr-2">
+                    Thư viện của tôi
+                  </a>
+                </div>    
+              </div>
+                     
+<!-- Bị sai css vị trí thanh divider nè  -->               
+<!-- Bị sai kích thước nè -->   
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </header>
+
+  <!-- SCRIPT -->
+  <!-- CDN -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

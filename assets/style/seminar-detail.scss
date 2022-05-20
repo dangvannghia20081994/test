@@ -1,0 +1,139 @@
+.seminar-detail-inner-section {
+	padding-top: 36px;
+	padding-bottom: 73px;
+	.breadcrumb {
+		background-color: transparent;
+
+		.breadcrumb-item {
+			font-weight: 400;
+			font-size: 14px;
+			line-height: 16px;
+			color: #777777;
+			a {
+				color: inherit;
+			}
+		}
+	}
+	.preview-data-block {
+		background: #ffffff;
+		border-radius: 5px;
+		padding: 15px;
+		gap: 24px;
+
+		position: relative;
+		.preview-image {
+			position: relative;
+			.btn-unfollow {
+				display: none;
+			}
+			.follow-icon {
+				position: absolute;
+				top: 12px;
+				right: 12px;
+				z-index: 3;
+			}
+			&:not(.card-small):before {
+				content: '';
+				width: 100%;
+				height: 55px;
+				top: 0;
+				left: 0;
+				position: absolute;
+				background: linear-gradient(180deg, rgba(0, 0, 0, 0.48) 0%, rgba(0, 0, 0, 0) 100%);
+				border-radius: 3px 3px 0px 0px;
+				z-index: 2;
+			}
+		}
+		&.seminar-followed {
+			.btn-follow {
+				display: none;
+			}
+			.btn-unfollow {
+				display: block;
+			}
+		}
+		.card-img-preview {
+			width: 200px;
+			min-height: 130px;
+			object-fit: cover;
+			border-radius: 3px;
+			height: 100%;
+		}
+		.content-title {
+			font-weight: 700;
+			font-size: 24px;
+			line-height: 28px;
+			margin-bottom: 5px;
+			display: flex;
+			gap: 8px;
+			align-items: flex-start;
+		}
+		.content-users {
+			display: flex;
+			flex-wrap: wrap;
+			align-items: center;
+			gap: 15px;
+			margin-bottom: 6px;
+			.user {
+				display: flex;
+				align-items: center;
+				gap: 6px;
+				font-weight: 400;
+				font-size: 15px;
+				line-height: 18px;
+				color: #777777;
+			}
+		}
+		.content-video-live-stream-counter,
+		.content-video-counter {
+			font-weight: 400;
+			font-size: 15px;
+			line-height: 18px;
+			margin-bottom: 6px;
+			display: flex;
+			align-items: center;
+			gap: 6px;
+		}
+		.content-video-live-stream-counter {
+			margin-bottom: 0;
+		}
+		.group-actions {
+			position: absolute;
+			bottom: 16px;
+			right: 16px;
+		}
+		.btn-fk {
+			border-radius: 20px;
+			color: #ffffff;
+			font-weight: 500;
+			font-size: 16px;
+			padding: 8px 12px;
+			width: max-content;
+		}
+	}
+	.tabs-controller {
+		padding-top: 32px;
+		.list-tabs {
+			.nav-link {
+				padding-top: 0;
+				padding-bottom: 0;
+				padding-left: 0;
+				font-weight: 400;
+				font-size: 20px;
+				line-height: 23px;
+				color: #979797;
+				&.active {
+					font-weight: 700;
+					background-color: transparent;
+					color: #333333;
+				}
+			}
+		}
+		.tab-content {
+			background: #ffffff;
+			border: 1px solid #eeeeee;
+			border-radius: 4px;
+			padding: 23px 16px;
+		}
+	}
+}
