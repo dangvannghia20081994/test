@@ -44,6 +44,7 @@
 
 .lib-inner-section .lib-inner-advance-filter.show-advance-filter {
   display: block;
+  padding-right: 16px !important;
   width: 100%;
   opacity: 1;
   -webkit-transform: translateX(0px);
@@ -60,7 +61,7 @@
   position: absolute;
   padding: 0;
   top: 24px;
-  left: 24px;
+  left: 16px;
   gap: 16px;
 }
 

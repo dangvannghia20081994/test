@@ -262,6 +262,10 @@ body .hide-on-mobile-flex {
   -webkit-box-orient: vertical;
 }
 
+body .dropdown-toggle::after {
+  display: none;
+}
+
 .bread-crumb-ctm .each-tab-bc {
   font-weight: normal;
   font-size: 12px;

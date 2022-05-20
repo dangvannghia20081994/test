@@ -1,0 +1,8 @@
+Files change:
+
+footer.html
+index.html
+home-search.html
+main.scss
+main.css
+assets/images/icons

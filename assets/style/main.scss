@@ -136,6 +136,11 @@ body {
 	}
 }
 // BS4 OVERWRITE
+body {
+	.dropdown-toggle::after {
+		display: none;
+	}
+}
 .bread-crumb-ctm {
 	.each-tab-bc {
 		font-weight: normal;
@@ -155,6 +160,7 @@ body {
 		}
 	}
 }
+
 .btn-outline-primary {
 	color: $primaryColor;
 	background-color: transparent;
